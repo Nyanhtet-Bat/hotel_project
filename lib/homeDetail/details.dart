@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:project_trip_app/booking_calendar/date_range_picker.dart';
+import 'package:project_trip_app/model/floor_room.dart';
 import 'package:project_trip_app/model/hotel_model.dart';
 import 'package:project_trip_app/model/room_types.dart';
 
 class HotelDetails extends StatelessWidget {
   final RoomTypes roomTypes;
+
 
   HotelDetails(this.roomTypes);
 
@@ -143,10 +145,10 @@ class HotelDetails extends StatelessWidget {
                           Text("${roomTypes.totalRoom}",
                               style: TextStyle(color: Colors.white)),
                           Text(""),
-                          Text("Opened @".toUpperCase(),
+                          Text("Floors".toUpperCase(),
                               style: TextStyle(color: Colors.white)),
-                          Text("${roomTypes.createdAt}",
-                              style: TextStyle(color: Colors.white)),
+//                          Text("${floors.floorNo} (${floors.floorName})}",
+//                              style: TextStyle(color: Colors.white)),
                           Text(""),
                           Text("Update".toUpperCase(),
                               style: TextStyle(color: Colors.white)),
